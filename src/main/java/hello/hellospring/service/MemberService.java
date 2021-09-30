@@ -11,12 +11,12 @@ import java.util.List;
 import java.util.Optional;
 
 // Service에서 비지니스 로직 만듦
-@Service
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
