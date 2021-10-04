@@ -7,7 +7,7 @@ import javax.swing.text.html.Option;
 import java.util.*;
 
 // Repository에서 데이터 저장
-@Repository
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap();
