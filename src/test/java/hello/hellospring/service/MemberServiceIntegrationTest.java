@@ -34,9 +34,9 @@ public class MemberServiceIntegrationTest {
     public void 중복_회원_예외() throws Exception {
         //Given
         Member member1 = new Member();
-        member1.setName("spring");
+        member1.setName("same");
         Member member2 = new Member();
-        member2.setName("spring2");
+        member2.setName("same");
         //When
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,
